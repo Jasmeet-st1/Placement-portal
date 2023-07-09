@@ -59,7 +59,7 @@ const SideComponent = (props) => {
                 <Chip label={skill} style={{ marginRight: "2px",backgroundColor:"#1976d2", color:"white" }} />
               ))}
             </Grid>
-            <Grid item >Job Description : <Typography variant="body1"><pre>{job.jobdesc}</pre></Typography></Grid>
+            <Grid item >Job Description : <Typography variant="body1"><pre style={{whiteSpace:"pre-wrap",}}>{job.jobdesc}</pre></Typography></Grid>
             <Grid item>Role : {job.jobType}</Grid>
             <Grid item>Salary : &#8377; {job.salary} per month</Grid>
             <Grid item>
